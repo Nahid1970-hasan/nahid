@@ -1,0 +1,32 @@
+1.Create a Folder
+2.Open Visual Stdio code and select the folder
+3.Open a new terminal
+4.Type this command and press enter : npm create vite@latest  
+5.Type Project name:_____ and press enter
+6.Type  Package name:___ and press enter
+7.Select React and prees enter 
+8.Select javascript and press enter 
+9.Now run: cd project name that already type in 5 no..Like Reactproject
+10.Run: npm install
+11.Run: npm run dev
+  
+  ------------------------------------------------------
+12.create two file name (.env.development &.env.production)
+===>("NODE_ENV=development
+     VITE_HOST=192.168.1.101
+      VITE_PORT=8080")
+===>("NODE_ENV=production  
+      #VITE_HOST=45.127.245.186 
+      VITE_HOST=192.168.1.101
+      #VITE_HOST=localhost
+      VITE_PORT=8080")
+
+
+
+------gitbash--------------------
+git clone url which url r shown in folder and enter the command
+==>git clone url 
+
+
+
+
