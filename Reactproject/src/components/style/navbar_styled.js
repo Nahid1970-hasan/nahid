@@ -7,7 +7,7 @@ export const StyledNavbar = styled.nav`
   left: 0px;
   // box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
   width:${({width})=> width?? "100%"};
-  background: ${({ theme }) => theme.colors.bulletinBack}; 
+  background: ${({ theme }) => theme.colors.primary}; 
   align-items: center;
   display: flex;
   font-family: var(--navbar-font);
@@ -36,7 +36,7 @@ export const StyledNavbar = styled.nav`
           padding: 10px;
           a {
             text-decoration: none;
-            color: ${({ theme }) => theme.colors.loader};
+            color: ${({ theme }) => theme.colors.barFont};
             font-size : ${({ theme }) => localStorage.i18nextLng=='en'? theme.fontSize.navFont:theme.fontSize.fontBn};
             cursor:pointer;
 

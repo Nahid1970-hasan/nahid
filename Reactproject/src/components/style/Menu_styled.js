@@ -7,7 +7,7 @@ export const StyledMenu = styled.div`
   right: ${({ last }) => (last ? last : "auto")};
   bottom: ${({ bottom }) => (bottom ? bottom : "auto")};
   background: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.loader};
+  color: ${({ theme }) => theme.colors.font};
   border-radius: 4px;
   margin-top: 3px;
   padding: 8px 0;
@@ -21,7 +21,7 @@ export const StyledMenu = styled.div`
     text-transform: capitalize !important;
 
     & a {
-      color: ${({ theme }) => theme.colors.loader} !important; 
+      color: ${({ theme }) => theme.colors.font} !important; 
       text-decoration: none;
       &::before {
         height: 0% !important;

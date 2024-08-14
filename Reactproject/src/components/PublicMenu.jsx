@@ -1,8 +1,7 @@
 import { useRef, useState } from "react";
 import { useOutsideClicker } from "../utils/helper";
 import { Menu } from "./Menu";
-import { Typography } from "./style/Typography_styled";
-import { MenuItem } from "./style/MenuItem_styled";
+import { Flex } from "./style/Flex_styled";
 
 export const PublicMenu = ({ item }) => {
   const [subMod, setSubMod] = useState(false);
@@ -18,14 +17,23 @@ export const PublicMenu = ({ item }) => {
 
   return (
     <>
+
+     
       <nav className="navbar">
+      
+      
         <ul className="navbar-nav">
-          <li className="nav-item">
+          <Flex  row>
+            <Flex md={3} padding="2px!important">
+            <li className="nav-item">
             <a href="/">
               Home
             </a>
-          </li>
-          <li
+          </li> 
+            </Flex>
+          
+            <Flex md={2} padding="2px!important">
+            <li
           >
             <div ref={subModRef}>
               <a
@@ -53,20 +61,28 @@ export const PublicMenu = ({ item }) => {
 
 
           </li>
-          <li >
+            </Flex>
+            <Flex md={3} padding="2px!important">
+            <li >
             <a href="#/about" >
               About
             </a>
           </li>
-          <li className="nav-item">
+            </Flex>
+            <Flex md={4} padding="2px!important">
+            <li className="nav-item">
             <a href="#/contact">
               Contact
             </a>
           </li>
+            </Flex>
+          </Flex>
+     
         </ul>
+      
       </nav>
-
-
+ 
+      
 
     </>
 

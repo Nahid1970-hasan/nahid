@@ -1,5 +1,4 @@
 import { Navbar } from "../components/Navbar";
-import { HeaderTop } from "../components/HeaderTop";
 import { Container } from "../components/style/Container_styled";
 
 
