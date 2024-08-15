@@ -1,69 +1,51 @@
-/* Navbar container styling */
-.navbar {
-
-  padding: 10px 20px; /* Padding around the navbar */
+* {
+  box-sizing: border-box;
 }
 
-/* Navbar items list styling */
-.navbar-nav {
-  list-style-type: none; /* Remove default list bullets */
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 1rem;
+  text-align: center;
+}
+
+.nav {
+  background-color: #c6deee;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.site-title {
+  font-size: 2rem;
+}
+
+.nav ul {
   padding: 0;
   margin: 0;
-  display: flex; /* Display items in a horizontal line */
+  list-style: none;
+  display: flex;
+  gap: 1rem;
 }
 
-/* Individual navbar item styling */
-.nav-item {
-  position: relative; /* Position relative for dropdown positioning */
-  margin-right: 20px; /* Space between menu items */
+.nav a {
+  color: #050607;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
 }
 
-/* Anchor tags styling in navbar items */
-.nav-item a {
-  color: #040404;
-  text-decoration: none; /* Remove underline from links */
-  padding: 10px 15px; /* Padding around the text */
-  display: block; /* Make anchor tags block elements to fill the space */
-  transition: background-color 0.3s; /* Smooth transition for background color */
+.nav li.active {
+  background-color: #90cee2;
 }
 
-/* Change background color on hover */
-.nav-item a:hover {
-  background-color: #eddfdf; /* Darker background color on hover */
-}
-
-/* Submenu styling */
-.submenu {
-  display: none; /* Hide the submenu by default */
-  position: absolute; /* Position submenu absolutely to align under parent */
-  top: 100%; /* Position it right below the parent element */
-  left: 0;
-  background-color: #fff; /* White background for the dropdown menu */
-  border: 1px solid #ccc; /* Border around the menu */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth effect */
-  z-index: 1000; /* Ensure menu is above other content */
-}
-
-/* Display submenu when parent item is active */
-.nav-item .submenu {
-  color: #040404;
-  display: block;
-}
-
-/* Styling for submenu items */
-.submenu li {
-  list-style-type: none; /* Remove default list bullets */
-}
-
-/* Anchor tags styling in submenu */
-.submenu li a {
-  color: #333; /* Dark text color */
-  text-decoration: none; /* Remove underline from links */
-  padding: 10px 20px; /* Padding around the text */
-  display: block; /* Make anchor tags block elements to fill the space */
-}
-
-/* Change background color on hover within the submenu */
-.submenu li a:hover {
-  background-color: #f0f0f0; /* Light background color on hover */
+.nav li:hover {
+  background-color: #a7d7e9;
 }
